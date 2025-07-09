@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="styles/category.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+</head>
+<body>
+<!-- Hamburger Menu Icon -->
+    <div id="ham-container">
+      <p><b>AffiliateStore</b></p>
+      <button id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Side Menu Overlay -->
+    <div onclick="closeMenuHandler()" id="menuOverlay"></div>
+    <!-- Side Menu -->
+    <div id="sideMenu">
+      <nav id="sideNav">
+          <a href="index.html" class="side-item">Home</a>
+          <a href="#skills-section" class="side-item">Products</a>
+          <a href="#project" class="side-item">Categories</a>
+          <a href="#service" class="side-item">About us</a>
+          <a href="#contact" class="side-item">Contact</a>
+          <p>Credit</p>
+      </nav>
+    </div>
+    
+    <div class="categories">
+        <div class="category active" data-category="all">All</div>
+        <div class="category" data-category="electronics">Marketing guide</div>
+        <div class="category" data-category="clothing">Clothing</div>
+        <div class="category" data-category="books">Books</div>
+        <div class="category" data-category="toys">Toys</div>
+    </div>
+
+  <section id="products">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product product-card" data-category="toys">
+          <div class="product-image">
+            <img src="pics/car.jpg" alt="Premium wireless headphones in black on wooden background">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Affiliate marketing guide</h3>
+            <div class="rating">
+              <span class="star">★★★★☆</span>
+              <small class="rating-count">(238)</small>
+            </div>
+            <div class="price-container">
+              <p class="product-price">N5,000.00</p>
+              <span class="red"><b>-20%</b></span>
+            </div>
+            <p class="product-description">Crystal clear sound with 30-hour battery life.</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+              
+      </div>
+    </div>
+  </section>
+
+    <script src="js/category.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
